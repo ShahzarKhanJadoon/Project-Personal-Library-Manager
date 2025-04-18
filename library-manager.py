@@ -287,10 +287,25 @@ load_library()
 st.sidebar.markdown("<h1 style='text-align: center;'>Navigation</h1>", unsafe_allow_html=True)
 
 # Add Lottie animation to sidebar
-lottie_book = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_HU2lUq.json")
+lottie_book = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_0clf3wdu.json")
 if lottie_book:
     with st.sidebar:
-        st_lottie(lottie_book, height=200, key="book_animation")
+        st_lottie(
+            lottie_book,
+            height=200,
+            key="book_animation",
+            speed=1,
+            loop=True,
+            quality="high"
+        )
+else:
+    # Fallback content if animation fails to load
+    st.sidebar.markdown("""
+    <div style="text-align: center;">
+        <h3>📚 Library Manager</h3>
+        <p>Manage your books efficiently</p>
+    </div>
+    """, unsafe_allow_html=True)
 
 # Create navigation options
 nav_options = st.sidebar.radio(
