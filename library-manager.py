@@ -8,7 +8,6 @@ import time
 import random
 import plotly.express as px
 import plotly.graph_objects as go
-from streamlit_lottie import st_lottie 
 import requests
 
 # Configure Streamlit page settings
@@ -92,16 +91,6 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-
-# Function to load Lottie animation from URL
-def load_lottieurl(url):
-    try:
-        r = requests.get(url)
-        if r.status_code != 200:
-            return None
-        return r.json()
-    except:
-        return None
 
 # Initialize session state variables
 if 'library' not in st.session_state:
@@ -284,23 +273,8 @@ def create_visualizations(stats):
 load_library()
 
 # Create sidebar navigation
-st.sidebar.markdown("<h1 style='text-align: center;'>Navigation</h1>", unsafe_allow_html=True)
-
-# Add Lottie animation to sidebar
-lottie_book = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_0clf3wdu.json")
-if lottie_book:
-    with st.sidebar:
-        st_lottie(
-            lottie_book,
-            height=200,
-            key="book_animation",
-            speed=1,
-            loop=True,
-            quality="high"
-        )
-else:
-    # Fallback content if animation fails to load
-    st.sidebar.markdown("""
+st.sidebar.markdown("<h1 style='text-align: center;'>Navigation</h1>", unsafe_allow_html=True
+st.sidebar.markdown("""
     <div style="text-align: center;">
         <h3>📚 Library Manager</h3>
         <p>Manage your books efficiently</p>
