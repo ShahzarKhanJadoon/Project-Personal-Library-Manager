@@ -276,7 +276,7 @@ load_library()
 st.sidebar.markdown("<h1 style='text-align: center;'>Navigation</h1>", unsafe_allow_html=True)
 st.sidebar.markdown("""
     <div style="text-align: center;">
-        <h3>📚 Library Manager</h3>
+        <h1>📚 Library Manager</h1>
         <p>Manage your books efficiently</p>
     </div>
     """, unsafe_allow_html=True)
