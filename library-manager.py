@@ -273,7 +273,7 @@ def create_visualizations(stats):
 load_library()
 
 # Create sidebar navigation
-st.sidebar.markdown("<h1 style='text-align: center;'>Navigation</h1>", unsafe_allow_html=True
+st.sidebar.markdown("<h1 style='text-align: center;'>Navigation</h1>", unsafe_allow_html=True)
 st.sidebar.markdown("""
     <div style="text-align: center;">
         <h3>📚 Library Manager</h3>
