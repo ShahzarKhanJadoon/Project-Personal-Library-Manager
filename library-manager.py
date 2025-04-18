@@ -61,7 +61,7 @@ st.markdown("""
     }
 
     .book-card:hover {
-        tranform: translateY(-5px);
+        transform: translateY(-5px);
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     }
 
