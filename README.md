@@ -4,7 +4,7 @@
 
 A simple, elegant, and interactive web app built with **Streamlit** to manage your personal book collection. Add books, track your reading status, visualize stats, and more — all in one place.
 
-🔗 **Live App**: [Streamlit Deployment](https://project-personal-library-manager-skj.streamlit.app/)
+🔗 **Live App**: https://project-personal-library-manager-skj.streamlit.app/
 
 ---
 
