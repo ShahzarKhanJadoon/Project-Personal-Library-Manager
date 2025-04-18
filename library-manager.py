@@ -287,7 +287,7 @@ load_library()
 st.sidebar.markdown("<h1 style='text-align: center;'>Navigation</h1>", unsafe_allow_html=True)
 
 # Add Lottie animation to sidebar
-lottie_book = load_lottieurl("https://assets9.lottieflies.com/temp/1f20_aKAfIn.json")
+lottie_book = load_lottieurl("https://lottie.host/f6bf6fa1-a65e-40ed-971e-a1ddb3796de6/MxLqzyePc6.lottie")
 if lottie_book:
     with st.sidebar:
         st_lottie(lottie_book, height=200, key="book_animation")
