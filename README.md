@@ -21,6 +21,9 @@ A simple, elegant, and interactive web app built with **Streamlit** to manage yo
 - **Plotly** – data visualization  
 - **JSON** – local data storage  
 - **Lottie & CSS** – enhanced user interface
+---
+🔗 **Live App**: https://project-personal-library-manager-skj.streamlit.app/
+
 
 ---
 
